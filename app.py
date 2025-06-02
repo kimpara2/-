@@ -37,3 +37,8 @@ def ask():
     response = model.predict(prompt)
 
     return jsonify({"answer": response})
+
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))  # Renderが自動で設定するPORT番号
+    app.run(host="0.0.0.0", port=port)
