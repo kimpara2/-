@@ -1,0 +1,8 @@
+flask
+langchain
+langchain-community
+langchain-openai
+openai
+chromadb
+tiktoken
+pypdf
